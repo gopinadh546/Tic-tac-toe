@@ -1,0 +1,113 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+ol li {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+ol li button {
+  border-radius: 2px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #caf4f6;
+  border: 2px solid #082f30;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 5rem;
+  padding: 0;
+  text-align: center;
+  width: 5rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-board {
+  margin: auto;
+  margin-top: 2rem;
+  width: 15rem;
+}
+
+.player {
+  font-weight: 900;
+}
+
+.status {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.game-info {
+  padding-top: 3rem;
+  margin-left: 3rem;
+}
+
+button {
+  background: #97a5db;
+  color: rgb(26, 24, 24);
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 1rem;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button:hover {
+  background: #fff;
+  color: #1aab8a;
+}
+
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
